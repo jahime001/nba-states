@@ -1,13 +1,16 @@
 import React from "react";
 import './Teams.css';
+import { Link } from "react-router-dom";
 
 function Teams() {
     return (
         <div className="teams-container">
-            <div className="card">
-                <img className="card-logo" src="https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png" alt="" />
-                <h2 className="card-name">Atlanta Hawks</h2>
-            </div>
+            <Link to='teaminfo' className="team-info">
+                <div className="card">
+                    <img className="card-logo" src="https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png" alt="" />
+                    <h2 className="card-name">Atlanta Hawks</h2>
+                </div>
+            </Link>
             <div className="card">
                 <img className="card-logo" src="https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png" alt="" />
                 <h2 className="card-name">Boston Celtics</h2>
