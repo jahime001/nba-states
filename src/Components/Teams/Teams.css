@@ -1,0 +1,24 @@
+.teams-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 10px;
+    width: 200px;
+    height: 225px;
+    margin: 10px;
+    border-radius: 20px;
+
+}
+
+.card:hover {
+    border: 1px solid;
+}

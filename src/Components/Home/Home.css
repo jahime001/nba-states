@@ -1,0 +1,73 @@
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    width: 100%;
+    height: 100%;
+}
+
+.team-check {
+    color: aliceblue;
+    position: absolute;
+    border: 3px solid wheat;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: rgba(88, 88, 88, 0.4);
+    animation: appear;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+.team-check:hover {
+    animation: shake 0.8s;
+}
+
+
+
+@keyframes shake {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateX(25px);
+    }
+
+    50% {
+        transform: translateX(-25px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 25%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
