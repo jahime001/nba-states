@@ -34,6 +34,9 @@ video {
     animation: shake 0.8s;
 }
 
+iframe {
+    border: 2px solid red;
+}
 
 
 @keyframes shake {

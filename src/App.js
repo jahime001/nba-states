@@ -11,7 +11,7 @@ import Games from './Components/Games/Games';
 import TeamInfo from './Components/TeamInfo/TeamInfo';
 function App() {
   const [teamsInfo, setTeamsInfo] = useState([])
-
+  const [nbaTeams, setNbaTeams] = useState([])
 
   const options = {
     method: 'GET',
@@ -22,12 +22,44 @@ function App() {
     }
   };
 
-  axios.request(options).then(function (response) {
-    setTeamsInfo(response.data.response);
-    console.log(teamsInfo)
-  }).catch(function (error) {
-    console.error(error);
-  });
+
+  // function deleteNonNba(){
+  //   if(!results.data.response.nbaFranchise){
+
+  //   }
+  // }
+
+  async function getTeams() {
+    let results = await axios.request(options);
+    setTeamsInfo(results.data.response)
+    let nbaFranchises = []
+    // nbaFranchises = 
+    teamsInfo.map(franchise => {
+      if (franchise.nbaFranchise) {
+        nbaFranchises.push(franchise)
+
+      }
+    })
+    setNbaTeams(nbaFranchises)
+  }
+  useEffect(() => {
+    getTeams();
+  }, [])
+
+
+
+  // function deleteNonNba() {
+  //   teamsInfo.map((team) => {
+  //     Object.keys(team).forEach(key => {
+  //       if (!team[key]) {
+  //         teamsInfo.pop(team);
+  //       }
+  //     });
+  //   })
+
+  //     console.log(teamsInfo)
+  //   }
+
 
   // const options = {
   //   method: 'GET',
@@ -54,11 +86,14 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='about' element={<About />} />
-          <Route path='teams' element={<Teams />} />
+          <Route path='teams' element={<Teams nbaTeams={nbaTeams} />} />
           <Route path='games' element={<Games />} />
           <Route path='teaminfo' element={<TeamInfo />} />
         </Routes>
       </main>
+      <button onClick={getTeams}>getTeams</button>
+
+
     </>
 
   );

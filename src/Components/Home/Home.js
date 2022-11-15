@@ -8,7 +8,7 @@ export default function Home() {
         <div className="home">
             <div className="video">
                 <div className="overlay"></div>
-                <video src={videobg} autoPlay loop muted />
+                <video src={videobg} autoPlay loop />
                 <Link to='teams' className="team-check"><h1>Check Out Teams</h1></Link>
 
 
