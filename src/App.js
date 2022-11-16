@@ -9,9 +9,10 @@ import About from './Components/About/About';
 import Teams from './Components/Teams/Teams';
 import Games from './Components/Games/Games';
 import TeamsInfo from './Components/TeamsInfo/TeamsInfo';
+import Roster from './Components/Roster/Roster';
 function App() {
-  const [teamsInfo, setTeamsInfo] = useState([])
   const [nbaTeams, setNbaTeams] = useState([])
+  const [chosenTeam, setChosenTeam] = useState([])
 
   const options = {
     method: 'GET',
@@ -59,7 +60,8 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/teams' element={<Teams nbaTeams={nbaTeams} />} />
           <Route path='/games' element={<Games />} />
-          <Route path='/teams/:code' element={<TeamsInfo nbaTeams={nbaTeams} />} />
+          <Route path='/teams/:code' element={<TeamsInfo nbaTeams={nbaTeams} setChosenTeam={setChosenTeam} />} />
+          <Route path='/teams/:code/roster' element={<Roster chosenTeam={chosenTeam} />} />
         </Routes>
       </main>
 

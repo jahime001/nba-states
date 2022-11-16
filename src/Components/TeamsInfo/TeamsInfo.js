@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Routes, Route, useParams } from "react-router-dom";
 import './TeamsInfo.css';
 import { Link, useNavigate } from "react-router-dom";
+import Roster from "../Roster/Roster";
 
 
-function TeamsInfo(props) {
+function TeamsInfo({ nbaTeams, setChosenTeam }) {
     let { code } = useParams()
-    let nbaTeams = props.nbaTeams
-    const [chosenTeam, setChosenTeam] = useState([])
+    // let nbaTeams = props.nbaTeams
     const [loading, setLoading] = useState(false)
     const navigate = useNavigate()
 
@@ -17,7 +17,7 @@ function TeamsInfo(props) {
         console.log(teamcode.code)
         if (teamcode.code === code) {
             matchingTeam.push(teamcode)
-
+            setChosenTeam(teamcode)
 
         }
     })
@@ -54,10 +54,11 @@ function TeamsInfo(props) {
 
                     </div>
                     <div className="teams-info-card-lower">
-                        <h1>View Roster</h1>
+                        <Link to={'/teams/' + code + '/roster'}><h1>View Roster</h1></Link>
                     </div>
                 </div>
             </div>
+
         )
 
     } else {

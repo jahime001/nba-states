@@ -4,8 +4,14 @@ import { Link, Routes, Route, useParams } from "react-router-dom";
 import TeamsInfo from "../TeamsInfo/TeamsInfo";
 
 
-function Teams(props) {
-    const nbaTeams = props.nbaTeams;
+function Teams({ nbaTeams }) {
+    // const nbaTeams = props.nbaTeams;
+
+    setTimeout(function () {
+
+
+    }, 2000);
+
 
     return (
         <div className="teams-container">
