@@ -8,7 +8,7 @@ export default function Nav() {
             <div className="logo">
                 <Link to='/' className="nav-link">
                     <img src="https://pngimg.com/uploads/nba/nba_PNG15.png" alt="" />
-                    <h1>NBA States</h1>
+                    <h1>NBA Stats</h1>
                 </Link>
             </div>
 

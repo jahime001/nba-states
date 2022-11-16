@@ -22,6 +22,10 @@
     border-radius: 20px;
     box-shadow: 10px 10px 30px;
     background-color: wheat;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
 
 
 }
@@ -67,3 +71,24 @@
         transform: rotateY(-180deg);
     }
 } */
+
+.card-logo {
+    max-width: 200px;
+}
+
+Link {
+    text-decoration: none;
+    color: inherit;
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

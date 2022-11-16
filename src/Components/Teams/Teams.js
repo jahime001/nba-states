@@ -1,6 +1,8 @@
 import React from "react";
 import './Teams.css';
-import { Link } from "react-router-dom";
+import { Link, Routes, Route, useParams } from "react-router-dom";
+import TeamsInfo from "../TeamsInfo/TeamsInfo";
+
 
 function Teams(props) {
     const nbaTeams = props.nbaTeams;
@@ -9,13 +11,15 @@ function Teams(props) {
         <div className="teams-container">
 
             {nbaTeams.map((team) => {
-                return (<div className="card" key={team['id']}>
-                    <img className="card-logo" src={team['logo']} alt="" />
-                    <h2 className="card-name">{team['name']}</h2>
-                </div>
+                return (
+                    <Link to={"/teams/" + team['code']}>
+                        <div className="card" key={team['code']}>
+                            <img className="card-logo" src={team['logo']} alt="" />
+                            <h2 className="card-name">{team['name']}</h2>
+                        </div>
+                    </Link>
                 )
             })}
-
         </div>
 
     )

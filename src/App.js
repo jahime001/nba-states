@@ -8,7 +8,7 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Teams from './Components/Teams/Teams';
 import Games from './Components/Games/Games';
-import TeamInfo from './Components/TeamInfo/TeamInfo';
+import TeamsInfo from './Components/TeamsInfo/TeamsInfo';
 function App() {
   const [teamsInfo, setTeamsInfo] = useState([])
   const [nbaTeams, setNbaTeams] = useState([])
@@ -31,16 +31,15 @@ function App() {
 
   async function getTeams() {
     let results = await axios.request(options);
-    setTeamsInfo(results.data.response)
+    // setTeamsInfo(results.data.response)
     let nbaFranchises = []
-    // nbaFranchises = 
-    teamsInfo.map(franchise => {
+    results.data.response.map(franchise => {
       if (franchise.nbaFranchise) {
         nbaFranchises.push(franchise)
-
       }
     })
     setNbaTeams(nbaFranchises)
+    console.log(nbaFranchises)
   }
   useEffect(() => {
     getTeams();
@@ -48,34 +47,6 @@ function App() {
 
 
 
-  // function deleteNonNba() {
-  //   teamsInfo.map((team) => {
-  //     Object.keys(team).forEach(key => {
-  //       if (!team[key]) {
-  //         teamsInfo.pop(team);
-  //       }
-  //     });
-  //   })
-
-  //     console.log(teamsInfo)
-  //   }
-
-
-  // const options = {
-  //   method: 'GET',
-  //   url: 'https://api-nba-v1.p.rapidapi.com/players/statistics',
-  //   params: { team: '1', season: '2020' },
-  //   headers: {
-  //     'X-RapidAPI-Key': 'add2b9373amsh7fd545895389f94p1b3613jsnb59a449e90b1',
-  //     'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
-  //   }
-  // };
-
-  // axios.request(options).then(function (response) {
-  //   console.log(response.data.response);
-  // }).catch(function (error) {
-  //   console.error(error);
-  // });
 
 
 
@@ -85,13 +56,13 @@ function App() {
       <main>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='about' element={<About />} />
-          <Route path='teams' element={<Teams nbaTeams={nbaTeams} />} />
-          <Route path='games' element={<Games />} />
-          <Route path='teaminfo' element={<TeamInfo />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/teams' element={<Teams nbaTeams={nbaTeams} />} />
+          <Route path='/games' element={<Games />} />
+          <Route path='/teams/:code' element={<TeamsInfo nbaTeams={nbaTeams} />} />
         </Routes>
       </main>
-      <button onClick={getTeams}>getTeams</button>
+
 
 
     </>
