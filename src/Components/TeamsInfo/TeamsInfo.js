@@ -13,7 +13,6 @@ function TeamsInfo({ nbaTeams, setChosenTeam }) {
     let matchingTeam = []
 
     nbaTeams.map(teamcode => {
-        console.log(teamcode.code)
         if (teamcode.code === code) {
             matchingTeam.push(teamcode)
             setChosenTeam(teamcode)
