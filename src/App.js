@@ -26,7 +26,6 @@ function App() {
 
   async function getTeams() {
     let results = await axios.request(options);
-    // setTeamsInfo(results.data.response)
     let nbaFranchises = []
     results.data.response.map(franchise => {
       if (franchise.nbaFranchise) {
@@ -34,7 +33,6 @@ function App() {
       }
     })
     setNbaTeams(nbaFranchises)
-    console.log(nbaFranchises)
   }
   useEffect(() => {
     getTeams();
