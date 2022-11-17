@@ -5,8 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 export default function Roster({ chosenTeam }) {
     const [players, setPlayers] = useState([])
-    console.log(chosenTeam)
-    const navigate = useNavigate()
+
 
     const options = {
         method: 'GET',
@@ -21,7 +20,6 @@ export default function Roster({ chosenTeam }) {
 
     async function getPlayers() {
         let results = await axios.request(options)
-        console.log(results.data.response)
         setPlayers(results.data.response)
 
     }
@@ -47,7 +45,6 @@ export default function Roster({ chosenTeam }) {
 
 
                 {players.map((player) => {
-                    console.log(player.firstname)
                     return (
                         <div className="player-card" key={player['id']}>
                             <h2 className='player-name'>{player.firstname}, {player.lastname}</h2>
