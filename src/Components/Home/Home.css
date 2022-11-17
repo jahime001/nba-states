@@ -15,16 +15,19 @@ video {
 .home {
     width: 100%;
     height: 100%;
+    background-image: url('../../assets/nbawallpaper.jpeg');
+    background-position: center;
+    background-position: cover;
 }
 
 .team-check {
     color: aliceblue;
-    position: absolute;
+    /* position: absolute; */
     border: 3px solid wheat;
     padding: 15px;
     text-decoration: none;
-    border-radius: 20px;
-    background-color: rgba(88, 88, 88, 0.4);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
     animation: heartbeat;
     /* animation-iteration-count: infinite; */
 }
@@ -33,9 +36,7 @@ video {
     animation: shake 0.8s;
 }
 
-iframe {
-    border: 2px solid red;
-}
+
 
 
 @keyframes shake {

@@ -24,12 +24,6 @@ function App() {
   };
 
 
-  // function deleteNonNba(){
-  //   if(!results.data.response.nbaFranchise){
-
-  //   }
-  // }
-
   async function getTeams() {
     let results = await axios.request(options);
     // setTeamsInfo(results.data.response)
@@ -45,6 +39,7 @@ function App() {
   useEffect(() => {
     getTeams();
   }, [])
+
 
 
 
