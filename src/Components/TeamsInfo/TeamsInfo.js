@@ -7,7 +7,6 @@ import Roster from "../Roster/Roster";
 
 function TeamsInfo({ nbaTeams, setChosenTeam }) {
     let { code } = useParams()
-    // let nbaTeams = props.nbaTeams
     const [loading, setLoading] = useState(false)
     const navigate = useNavigate()
 
@@ -27,9 +26,6 @@ function TeamsInfo({ nbaTeams, setChosenTeam }) {
     }, [loading])
 
     if (matchingTeam.length > 0) {
-        console.log('1')
-
-        console.log(matchingTeam);
         return (
             <div className="teams-info-container">
                 <h1 onClick={() => navigate(-1)} className="back-button">Back</h1>
@@ -62,18 +58,9 @@ function TeamsInfo({ nbaTeams, setChosenTeam }) {
         )
 
     } else {
-        console.log('2')
         setLoading(true)
         return <div className="teams-info-container"><h1>Loading</h1></div>
     }
-
-
-    // return (
-
-    //     <div className="teams-info-container">
-    //         {/* {show} */}
-    //     </div>
-    // )
 }
 
 
