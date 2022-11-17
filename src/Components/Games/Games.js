@@ -5,10 +5,7 @@ import { Link } from "react-router-dom";
 function Games() {
     const [gamesToday, setGamesToday] = useState([])
     const [todaysDate, setTodaysDate] = useState('2022-11-18')
-    let currentDate = new Date()
-    let day = currentDate.getDate()
-    let month = currentDate.getMonth() + 1
-    let year = currentDate.getFullYear()
+
 
 
     const options = {
@@ -23,7 +20,6 @@ function Games() {
 
     async function getGames() {
         let results = await axios.request(options)
-        console.log(results.data.response)
         setGamesToday(results.data.response)
 
     }
@@ -54,7 +50,6 @@ function Games() {
                     className='input'
                 />
                 {gamesToday.map(game => {
-
                     let time = game.date.start
                     let givinTime = time.substring(12, 16)
                     let timeSplit = givinTime.split('')
@@ -62,13 +57,10 @@ function Games() {
                     i = i + 7
                     timeSplit[0] = i.toString()
                     let newTime = timeSplit.join('')
-                    console.log(givinTime)
-                    console.log(newTime)
 
                     if (game.status.long === "Scheduled") {
                         return (
                             <div className='game-card'>
-
                                 <div className="vis-team">
                                     <Link to={"/teams/" + game.teams.visitors.code} className="game-link">
                                         <img className="gi" src={game.teams.visitors.logo} alt="" />
@@ -82,8 +74,6 @@ function Games() {
                                     <h3 className="vs">{todaysDate}</h3>
                                     <h3>@{newTime}</h3>
                                 </div>
-
-
                                 <div className="home-team">
                                     <Link to={"/teams/" + game.teams.home.code} className="game-link">
                                         <img className="gi" src={game.teams.home.logo} alt="" />
@@ -91,15 +81,11 @@ function Games() {
                                         <h2 className="tbd">TBD</h2>
                                     </Link>
                                 </div>
-
-
                             </div>
                         )
                     } else {
                         return (
-
                             <div className='game-card'>
-
                                 <div className="vis-team">
                                     <Link to={"/teams/" + game.teams.visitors.code} className="game-link">
                                         <img className="gi" src={game.teams.visitors.logo} alt="" />
@@ -111,11 +97,7 @@ function Games() {
                                     <h3 className="vs">@</h3>
                                     <h3 className="vs">{todaysDate}</h3>
                                     <h3 className="vs">Final</h3>
-
-
                                 </div>
-
-
                                 <div className="home-team">
                                     <Link to={"/teams/" + game.teams.home.code} className="game-link">
                                         <img className="gi" src={game.teams.home.logo} alt="" />
@@ -123,15 +105,10 @@ function Games() {
                                         <h2>{game.scores.home.points}</h2>
                                     </Link>
                                 </div>
-
-
                             </div>
                         )
                     }
-
                 })}
-
-
             </div>
         </div >
     )
