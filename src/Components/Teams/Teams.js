@@ -5,12 +5,7 @@ import TeamsInfo from "../TeamsInfo/TeamsInfo";
 
 
 function Teams({ nbaTeams }) {
-    // const nbaTeams = props.nbaTeams;
 
-    setTimeout(function () {
-
-
-    }, 2000);
 
 
     return (
@@ -21,7 +16,6 @@ function Teams({ nbaTeams }) {
                     <Link to={"/teams/" + team['code']}>
                         <div className="card" key={team['code']}>
                             <img className="card-logo" src={team['logo']} alt="" />
-                            {/* <h2 className="card-name">{team['name']}</h2> */}
                         </div>
                     </Link>
                 )
