@@ -10,31 +10,63 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* flex-direction: column; */
 }
 
 .home {
     width: 100%;
     height: 100%;
-    background-image: url('../../assets/nbawallpaper.jpeg');
     background-position: center;
     background-position: cover;
+    background-color: #1F2933;
+
+}
+
+.home-title {
+    font-size: 100px;
+    font-family: 'Oswald', sans-serif;
+    color: #9aa5b1;
+    /* border: 1px solid; */
+    height: 800px;
+    width: 30%;
+    margin-top: -100px;
+    margin-left: -250px;
+}
+
+.red {
+    color: red;
+}
+
+.bkp {
+    background: url('../../assets/court.jpeg');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .team-check {
     color: aliceblue;
     /* position: absolute; */
-    border: 3px solid wheat;
-    padding: 15px;
+    /* border: 3px solid rgb(0, 0, 0); */
+    padding: 10px;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.4);
     animation: heartbeat;
     /* animation-iteration-count: infinite; */
+    font-family: 'Oswald', sans-serif;
+    margin-top: -200px;
+    box-shadow: 5px 10px 10px black;
+    margin-left: 350px;
+    color: #9aa5b1;
+    background-color: #3e4c59;
+
+
 }
 
 .team-check:hover {
     animation: shake 0.8s;
 }
+
 
 
 

@@ -10,8 +10,23 @@
     width: 800px;
     justify-content: space-between;
     height: 50px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    background-color: rgba(53, 53, 53, 0.7);
+    backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 10px 10px 10px;
 
+
+}
+
+.player-card h2 {
+    color: rgb(254, 254, 254);
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.player-card h1 {
+    color: rgb(177, 177, 177);
+    font-family: 'Oswald', sans-serif;
 
 }
 
@@ -27,13 +42,17 @@
     /* border: 1px solid; */
     height: 700px;
     width: 800px;
-    margin-top: 150px;
+    /* margin-top: 90px; */
+
 }
 
 .players-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-position: center;
+    height: 100vh;
+    background-color: #1F2933;
 
 }
 
@@ -48,6 +67,7 @@
     margin-top: 0px;
     padding: 5px;
 
+
 }
 
 .player-position {
@@ -58,6 +78,7 @@
     /* border: 1px solid red; */
     height: 100%;
     width: 16%;
+
 }
 
 .player-jersey {

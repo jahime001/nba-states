@@ -5,7 +5,7 @@
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     padding: 30px;
-    background-color: rgb(255, 255, 255);
+    background-color: #1F2933;
 
 }
 
@@ -20,8 +20,8 @@
     height: 125px;
     margin: 10px;
     border-radius: 2px;
-    box-shadow: 10px 10px 30px;
-    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 10px 10px;
+    background-color: #3e4c59;
     text-align: center;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.5);

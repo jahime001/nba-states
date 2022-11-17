@@ -15,7 +15,7 @@ export default function Nav() {
             <nav>
                 <Link to='/' className="nav-link"><h3>Home</h3></Link>
                 <Link to='teams' className="nav-link"><h3>Teams</h3></Link>
-                <Link to='games' className="nav-link"><h3>Upcoming Games</h3></Link>
+                <Link to='games' className="nav-link"><h3>Games</h3></Link>
                 <Link to='about' className="nav-link"><h3>About</h3></Link>
             </nav>
         </div>

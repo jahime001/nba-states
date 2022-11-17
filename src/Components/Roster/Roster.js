@@ -37,12 +37,12 @@ export default function Roster({ chosenTeam }) {
 
             <div className="player-container">
                 <div className='player-card'>
-                    <h2 className='player-name'>Name</h2>
-                    <h2 className="player-position">Position</h2>
-                    <h2 className="player-jersey">#</h2>
-                    <h2 className="player-height">Height</h2>
-                    <h2 className="player-weight">Weight -Lbs</h2>
-                    <h2 className="player-start">Draft Year</h2>
+                    <h1 className='player-name'>Name</h1>
+                    <h1 className="player-position">Position</h1>
+                    <h1 className="player-jersey">#</h1>
+                    <h1 className="player-height">Height</h1>
+                    <h1 className="player-weight">Weight -Lbs</h1>
+                    <h1 className="player-start">Draft Year</h1>
                 </div>
 
 

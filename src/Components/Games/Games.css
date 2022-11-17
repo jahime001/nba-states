@@ -1,0 +1,77 @@
+.game-card {
+    border: 1px solid #3e4c59;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    box-shadow: 5px 10px 10px black;
+    background-color: #3e4c59;
+    color: #9aa5b1;
+}
+
+.vis-team {
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 33%;
+    /* filter: drop-shadow(16px 16px 10px black) */
+}
+
+.game-link {
+    color: inherit;
+}
+
+.game-link:hover {
+    cursor: pointer;
+}
+
+.vs {
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 33%;
+}
+
+.home-team {
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 33%;
+    /* filter: drop-shadow(16px 16px 10px black) */
+}
+
+.game-data {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    /* filter: drop-shadow(16px 16px 10px black) */
+}
+
+.tbd {
+    font-weight: 300;
+}
+
+.games-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    background-color: #1F2933;
+    color: #9aa5b1;
+}
+
+.input {
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #9aa5b1;
+    background-color: #3e4c59;
+}
+
+.gi {
+    /* filter: drop-shadow(16px 16px 10px black) */
+}

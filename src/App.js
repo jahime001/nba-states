@@ -51,7 +51,7 @@ function App() {
       <Nav />
       <main>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home nbaTeams={nbaTeams} />} />
           <Route path='/about' element={<About />} />
           <Route path='/teams' element={<Teams nbaTeams={nbaTeams} />} />
           <Route path='/games' element={<Games />} />

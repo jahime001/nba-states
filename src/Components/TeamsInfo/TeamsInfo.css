@@ -6,20 +6,21 @@
     background-color: rgb(255, 255, 255);
     height: 100vh;
     width: 100%;
-    background-image: url('../../assets/court.jpeg');
     background-position: center;
+    background-color: #1F2933;
 
 
 }
 
 
 .teams-info-card {
-    background-color: rgba(114, 114, 114, 0.7);
+    background-color: #3e4c59;
     backdrop-filter: saturate(180%) blur(20px);
     width: 700px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 10px 10px 30px;
+
 }
 
 .teams-info-card-upper {
@@ -40,7 +41,7 @@
 }
 
 .teams-info-card-mid {
-    border: 3px solid white;
+    /* border: 3px solid white; */
     height: 60%;
 }
 
@@ -60,6 +61,7 @@
     border: 1px solid white;
     height: 217px;
     display: flex;
+
 }
 
 .info-left {
@@ -83,6 +85,7 @@
 .teams-info-card-lower:hover {
     color: black;
     cursor: pointer;
+    color: inherit;
 }
 
 .team-code {
@@ -100,11 +103,12 @@
     display: flex;
     align-items: center;
     justify-self: center;
-    color: black;
+    color: #9aa5b1;
+    background-color: #3e4c59;
 }
 
 .back-button:hover {
-    color: white;
+    color: #3e4c59;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #9aa5b1;
 }
