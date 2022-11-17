@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import './Home.css'
 
 export default function Home(props) {
-    let nbaTeams = props.nbaTeams
-    const [number, setNumber] = useState(0)
 
 
     return (

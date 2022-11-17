@@ -10,7 +10,6 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
 }
 
 .home {
@@ -26,7 +25,6 @@ video {
     font-size: 100px;
     font-family: 'Oswald', sans-serif;
     color: #9aa5b1;
-    /* border: 1px solid; */
     height: 800px;
     width: 30%;
     margin-top: -100px;
@@ -45,14 +43,10 @@ video {
 
 .team-check {
     color: aliceblue;
-    /* position: absolute; */
-    /* border: 3px solid rgb(0, 0, 0); */
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.4);
-    animation: heartbeat;
-    /* animation-iteration-count: infinite; */
     font-family: 'Oswald', sans-serif;
     margin-top: -200px;
     box-shadow: 5px 10px 10px black;
@@ -86,102 +80,5 @@ video {
 
     100% {
         transform: translateX(0px);
-    }
-}
-
-@keyframes appear {
-    0% {
-        opacity: 0%;
-    }
-
-    25% {
-        opacity: 25%;
-    }
-
-    50% {
-        opacity: 50%;
-    }
-
-    100% {
-        opacity: 100%;
-    }
-}
-
-
-@-webkit-keyframes heartbeat {
-    from {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transform-origin: center center;
-        transform-origin: center center;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-
-    10% {
-        -webkit-transform: scale(0.91);
-        transform: scale(0.91);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-
-    17% {
-        -webkit-transform: scale(0.98);
-        transform: scale(0.98);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-
-    33% {
-        -webkit-transform: scale(0.87);
-        transform: scale(0.87);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-
-    45% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-}
-
-@keyframes heartbeat {
-    from {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transform-origin: center center;
-        transform-origin: center center;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-
-    10% {
-        -webkit-transform: scale(0.91);
-        transform: scale(0.91);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-
-    17% {
-        -webkit-transform: scale(0.98);
-        transform: scale(0.98);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-
-    33% {
-        -webkit-transform: scale(0.87);
-        transform: scale(0.87);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-
-    45% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
     }
 }

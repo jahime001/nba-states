@@ -14,9 +14,7 @@
 
 .vis-team {
     text-align: center;
-    /* border: 1px solid red; */
     width: 33%;
-    /* filter: drop-shadow(16px 16px 10px black) */
 }
 
 .game-link {
@@ -29,15 +27,12 @@
 
 .vs {
     text-align: center;
-    /* border: 1px solid red; */
     width: 33%;
 }
 
 .home-team {
     text-align: center;
-    /* border: 1px solid red; */
     width: 33%;
-    /* filter: drop-shadow(16px 16px 10px black) */
 }
 
 .game-data {
@@ -47,7 +42,6 @@
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
-    /* filter: drop-shadow(16px 16px 10px black) */
 }
 
 .tbd {
@@ -70,8 +64,4 @@
     border-radius: 10px;
     color: #9aa5b1;
     background-color: #3e4c59;
-}
-
-.gi {
-    /* filter: drop-shadow(16px 16px 10px black) */
 }
