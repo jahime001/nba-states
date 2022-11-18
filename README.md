@@ -45,7 +45,7 @@ The goal of this project was to build a full Front-End application using React.j
 
 
 <h1>Link to deployed site:<h1>
-[NBA Stats](https://nba-stats-theta.vercel.app/games)
+[[@NBA Stats](https://nba-stats-theta.vercel.app/games)]
 
 
 ## Components:
@@ -115,7 +115,7 @@ Pages does not display correctly on some screen sizes
 <h2> Issue #3</h2>
 Day 1 of the project i was working on my home screen and i added a video as my home background, this video exceeded Github's file size limit which rendered my files unable to push. Not thinking anything off i continued throughout the project planning to just swap out the video with a link to the video, not knowing my old commits still included the video and would this need to push it.
 
-Fix(provided by @davidmagbee)-
+Fix(provided by [[@davidmagbee](https://www.github.com/davidmagbee)])-
 
 I first duplicated my files just in case i break/lose the original.
 Then i ran this code directly in the directory of the original project while targeting the src folder for the video
@@ -132,7 +132,7 @@ git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch ./src/ass
 
 My Page was trying to render information before it could get that information from the API so the page would break
 
-Fix(provided by @jhorak)-
+Fix(provided by [[@jhorak])-
 
 a conditional rendering statement- if my state whe the information is empty(falsy || < 0), render h1 tags with 'Loading' in it and set my loading state to true which would cause my useEffect to keep checking to see if the api brought back the Info. if the state be full(truthy || > 0), display the information on the screen.
 
