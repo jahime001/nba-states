@@ -3,132 +3,99 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About The Project:
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Home Page][product-screenshot1]
+![Teams Page][product-screenshot2]
+![Games Page][product-screenshot3]
+![Hierarchy][product-screenshot4]
 
-The goal of this project was to build a full Front-End application using React.js using what i learned as a GA student.  Using this app you can a NBA team's Roster and Upcoming Games. You can also see games from the 2021 season
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+## The Goal:
+The goal of this project was to build a full Front-End application using React.js using what i learned as a GA student.  Using this app you can a NBA team's Roster and Upcoming Games. You can also see games from the 2021 season.
 
 
-### Built With
+
+
+
+### Built With:
 
 
 * [![React][React.js]][React-url]
-* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-* ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-* ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+* [![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://www.javascript.com/)
+* [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://html.com/)
+* [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)]()
+
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Launching:
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+<h3>Supported Platforms-</h3>
+<em>Because of the use of WebKit Css, some plateform are not fully supported</em>
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)
+![Safari](https://img.shields.io/badge/Safari-000000?style=for-the-badge&logo=Safari&logoColor=white)
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<h1>Link to deployed site:<h1>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Components:
+| Components 	| Description                                                                             	|
+|------------	|-----------------------------------------------------------------------------------------	|
+| App        	| My main component where all my componnets connect(parent)                               	|
+| Home       	| Home component is the first component you see when loading up the website               	|
+| Nav        	| This component host my nav with links to all other pages                                	|
+| Teams      	| This component lists out all the teams                                                  	|
+| TeamsInfo  	| This component displays minor information of the selected team from 'Teams'             	|
+| Roster     	| This component displays every player of the selected team from 'Teams'                  	|
+| Games      	| This component displays today's games with the option of viewing upcoming or past games 	|
+
+## Time Freams:
+| Components 	| Description                                                                             	|
+|------------	|-----------------------------------------------------------------------------------------	|
+| App        	| My main component where all my componnets connect(parent)                               	|
+| Home       	| Home component is the first component you see when loading up the website               	|
+| Nav        	| This component host my nav with links to all other pages                                	|
+| Teams      	| This component lists out all the teams                                                  	|
+| TeamsInfo  	| This component displays minor information of the selected team from 'Teams'             	|
+| Roster     	| This component displays every player of the selected team from 'Teams'                  	|
+| Games      	| This component displays today's games with the option of viewing upcoming or past games 	|
 
 
 
 <!-- ROADMAP -->
-## Roadmap
+## Roadmap-
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [ ] More information for each team (e.g. wins/losses, record for current season, all time stats)
+- [ ] Search feature to be able to search by player or team
+- [ ] A more detailed roster page with players puctures and stats
+- [ ] Sign in feature so you can favorite teams
 
 
 
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- LICENSE -->
-## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- CONTACT -->
-## Contact
+## Links
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jahimecameau/)
 
 
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
 
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -146,7 +113,10 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[product-screenshot1]: https://i.imgur.com/I34YAFC.png
+[product-screenshot2]: https://i.imgur.com/jveZWp8.png
+[product-screenshot3]: https://i.imgur.com/28Lcwpl.png
+[product-screenshot4]: https://media.git.generalassemb.ly/user/43717/files/498aac89-84a7-4793-b86d-eae5376e056e
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB

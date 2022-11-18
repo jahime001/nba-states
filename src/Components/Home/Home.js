@@ -9,7 +9,7 @@ export default function Home(props) {
         <div className="home">
             <div className="video">
 
-                <h1 className="home-title">Nba Stats for the <span className="bkp">2022</span> <span className="bss">Nba Season</span></h1>
+                <h1 className="home-title">NBA Stats for the <span className="bkp">2022</span> <span className="bss">NBA Season</span></h1>
                 <Link to='teams' className="team-check"><h1>Check Out Teams</h1></Link>
 
 
