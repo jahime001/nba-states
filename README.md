@@ -45,6 +45,7 @@ The goal of this project was to build a full Front-End application using React.j
 
 
 <h1>Link to deployed site:<h1>
+https://nba-stats-theta.vercel.app/games
 
 
 ## Components:
@@ -81,7 +82,32 @@ The goal of this project was to build a full Front-End application using React.j
 
 
 
+## Current Issues
+<h2>#1<h2>
+Currently the date is one day aheadthe Api was made in another time zone/region, i made a function to change the time. i had the same issue with the time but i fixed it.
 
+```js
+//data from api ex. -> 
+{start: '2022-11-18T03:00:00.000Z'}
+
+//how i got the correct time ->
+   let time = game.date.start
+   let givinTime = time.substring(12, 16)
+   let timeSplit = givinTime.split('')
+   let i = parseInt(timeSplit[0]);
+   i = i + 7
+   timeSplit[0] = i.toString()
+   let newTime = timeSplit.join('')
+   return(newTime)
+
+// output = 10:00
+
+
+```
+I just need to do the same with the date but since the api searched using the date i will need it to display the correct date but search using the api's date
+
+<h2>#2<h2>
+Pages does not display correctly on some screen sizes
 
 
 
