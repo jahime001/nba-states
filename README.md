@@ -45,7 +45,7 @@ The goal of this project was to build a full Front-End application using React.j
 
 
 <h1>Link to deployed site:<h1>
-https://nba-stats-theta.vercel.app/games
+[NBA Stats](https://nba-stats-theta.vercel.app/games)
 
 
 ## Components:
@@ -83,7 +83,7 @@ https://nba-stats-theta.vercel.app/games
 
 
 ## Current Issues
-<h2>#1<h2>
+<h2> Issue #1<h2>
 Currently the date is one day aheadthe Api was made in another time zone/region, i made a function to change the time. i had the same issue with the time but i fixed it.
 
 ```js
@@ -102,12 +102,63 @@ Currently the date is one day aheadthe Api was made in another time zone/region,
 
 // output = 10:00
 
-
 ```
 I just need to do the same with the date but since the api searched using the date i will need it to display the correct date but search using the api's date
 
-<h2>#2<h2>
+- [x] Resolved?
+
+<h2> Issue #2<h2>
 Pages does not display correctly on some screen sizes
+
+- [ ] Resolved?
+
+<h2> Issue #3</h2>
+Day 1 of the project i was working on my home screen and i added a video as my home background, this video exceeded Github's file size limit which rendered my files unable to push. Not thinking anything off i continued throughout the project planning to just swap out the video with a link to the video, not knowing my old commits still included the video and would this need to push it.
+
+Fix(provided by @davidmagbee)-
+
+I first duplicated my files just in case i break/lose the original.
+Then i ran this code directly in the directory of the original project while targeting the src folder for the video
+
+```
+git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch ./src/assets/nbamix-1080p.mp4" HEAD
+
+```
+
+- [x] Resolved?
+
+
+<h2> Issue #4</h2>
+
+My Page was trying to render information before it could get that information from the API so the page would break
+
+Fix(provided by @jhorak)-
+
+a conditional rendering statement- if my state whe the information is empty(falsy || < 0), render h1 tags with 'Loading' in it and set my loading state to true which would cause my useEffect to keep checking to see if the api brought back the Info. if the state be full(truthy || > 0), display the information on the screen.
+
+(example code, actual code can be found in TeamsInfo.js)
+```js
+if (matchingTeam.length > 0) {
+        return (
+            <div className="teams-info-container">
+                <h1 className="teams-info-name">{matchingTeam[0].name}</h1>
+                <h1 className="team-code">{code}</h1>
+            </div>
+        )
+         }else {
+            return(
+               setLoading(true)
+               <div className="teams-info-container">
+                <h1 className="teams-info-name">Loading</h1>
+                <h1 className="team-code">Loading</h1>
+            </div>
+            )
+         }
+                   
+            
+```
+- [x] Resolved?
+
 
 
 
