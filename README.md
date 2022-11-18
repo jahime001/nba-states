@@ -59,15 +59,14 @@ The goal of this project was to build a full Front-End application using React.j
 | Games      	| This component displays today's games with the option of viewing upcoming or past games 	|
 
 ## Time Freams:
-| Components 	| Description                                                                             	|
-|------------	|-----------------------------------------------------------------------------------------	|
-| App        	| My main component where all my componnets connect(parent)                               	|
-| Home       	| Home component is the first component you see when loading up the website               	|
-| Nav        	| This component host my nav with links to all other pages                                	|
-| Teams      	| This component lists out all the teams                                                  	|
-| TeamsInfo  	| This component displays minor information of the selected team from 'Teams'             	|
-| Roster     	| This component displays every player of the selected team from 'Teams'                  	|
-| Games      	| This component displays today's games with the option of viewing upcoming or past games 	|
+| Component 	| Priority 	| Time Invested 	| Time Styling 	|
+|-----------	|----------	|---------------	|--------------	|
+| Teams     	|     H    	|       4h      	|      3h      	|
+| TeamsInfo 	|     H    	|       2h      	|      2h      	|
+| Nav       	|     M    	|      30m      	|      30m     	|
+| Roster    	|     H    	|       3h      	|      3h      	|
+| Games     	|     H    	|       6h      	|      2h      	|
+| Home      	|     M    	|       2h      	|      1h      	|
 
 
 
