@@ -45,7 +45,7 @@ The goal of this project was to build a full Front-End application using React.j
 
 
 <h1>Link to deployed site:<h1>
-[[@NBA Stats](https://nba-stats-theta.vercel.app/games)]
+[[@NBA Stats](https://nba-stats-theta.vercel.app)]
 
 
 ## Components:
